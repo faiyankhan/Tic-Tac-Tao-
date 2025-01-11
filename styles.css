@@ -8,8 +8,11 @@ body{
     text-align: center;
 }
 
+.current-player{
+    text-align: center;
+}
+
 .board{
-    border: 1px solid black;
     width: fit-content;
     margin: 40px auto;
     background-color: #ffa94d;
@@ -22,6 +25,15 @@ body{
     height: 100px;
     width: 100px;
     margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 5px 2px  rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+}
+
+.box:hover{
+    cursor: pointer;
 }
 
 .row{
