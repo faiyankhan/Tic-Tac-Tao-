@@ -21,6 +21,12 @@ renderBoard();
 
 
 function selectBox(boxNumber){
+    if(board[boxNumber] !== -1){
+        alert(" Invalid Move : : Select Unfilled Box");
+        return;
+    }
+
+
   board[boxNumber] = currentPlayer;
   renderBoard();
 
