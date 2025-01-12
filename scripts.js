@@ -15,7 +15,6 @@ function renderBoard() {
             boxElement.innerHTML = '';
         }
     })
-
 }
 renderBoard();
 
@@ -40,3 +39,4 @@ function selectBox(boxNumber){
   const currentPlayerElement = document.getElementById("currentPlayer");
   currentPlayerElement.innerText = currentPlayer;
 }
+
