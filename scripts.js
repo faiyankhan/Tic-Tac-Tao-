@@ -37,7 +37,10 @@ function selectBox(boxNumber) {
 
     const currentPlayerElement = document.getElementById("currentPlayer");
     currentPlayerElement.innerText = currentPlayer;
+
+    checkForWinner();
 }
+
 
 
 function resetBoard() {
@@ -88,5 +91,31 @@ function checkForWinner() {
     }
     else if (isPlayerPresent ([2,4,6], "X")) {
         alert('Player X Wins 🎉');
+    }
+
+
+    if (isPlayerPresent ([0,1,2], "O")) {
+        alert('Player O Wins 🎉');
+    }
+    else if (isPlayerPresent ([3,4,5], "O")) {
+        alert('Player O Wins 🎉');
+    }
+    else if (isPlayerPresent ([6,7,8], "O")) {
+        alert('Player  Wins 🎉');
+    }
+    else if (isPlayerPresent ([0,3,6], "O")) {
+        alert('Player O Wins 🎉');
+    }
+    else if (isPlayerPresent ([1,4,7], "O")) {
+        alert('Player O Wins 🎉');
+    }
+    else if (isPlayerPresent ([2,5,8], "O")) {
+        alert('Player O Wins 🎉');
+    }
+    else if (isPlayerPresent ([0,4,8], "O")) {
+        alert('Player O Wins 🎉');
+    }
+    else if (isPlayerPresent ([2,4,6], "O")) {
+        alert('Player O Wins 🎉');
     }
 }
